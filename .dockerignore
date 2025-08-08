@@ -1,0 +1,15 @@
+.git
+.gitignore
+.ipynb_checkpoints
+__pycache__
+*.pyc
+.venv
+venv
+.env
+.DS_Store
+data/raw
+data/processed
+models
+reports
+node_modules
+

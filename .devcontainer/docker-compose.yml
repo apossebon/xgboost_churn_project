@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    image: predict_churn_xgboost:latest
+    container_name: predict_churn_xgboost_dev
+    # user: vscode  # imagem base usa root; com python:slim mantenha root por simplicidade
+    volumes:
+      - ..:/workspace:cached
+    working_dir: /workspace
+    command: sleep infinity
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PIP_DISABLE_PIP_VERSION_CHECK=1
+      - PIP_NO_CACHE_DIR=1
+
