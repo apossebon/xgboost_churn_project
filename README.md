@@ -52,6 +52,33 @@ source .venv/bin/activate
 uv sync
 ```
 
+### Step-by-step
+
+1. Install dependencies with `uv sync` (inside the devcontainer or local venv).
+2. Open and run `notebooks/01_xgboost_churn.ipynb` top-to-bottom.
+3. Outputs (figures and metrics) are generated during the run. Exported copies live under `reports/`.
+
+### Current outputs
+
+- Metrics (synthetic dataset example):
+  - Accuracy: 0.945
+  - Precision: 0.9456
+  - Recall: 0.8670
+  - F1: 0.9046
+  - ROC AUC: 0.9785
+
+Images exported from the latest run:
+
+![ROC curve](reports/churn_output_files/churn_output_8_0.png)
+
+![Confusion matrix](reports/churn_output_files/churn_output_8_2.png)
+
+![Feature importances](reports/churn_output_files/churn_output_9_0.png)
+
+![SHAP beeswarm (if available)](reports/churn_output_files/churn_output_9_1.png)
+
+Full report (Markdown): `reports/churn_output.md`
+
 ### License
 
 Free for educational and portfolio use.
@@ -112,6 +139,33 @@ uv venv .venv
 source .venv/bin/activate
 uv sync
 ```
+
+### Passo a passo
+
+1. Instale as dependências com `uv sync` (no devcontainer ou venv local).
+2. Abra e execute `notebooks/01_xgboost_churn.ipynb` de cima para baixo.
+3. Saídas (figuras e métricas) são geradas durante a execução. Cópias exportadas ficam em `reports/`.
+
+### Resultados atuais
+
+- Métricas (exemplo com dataset sintético):
+  - Acurácia: 0,945
+  - Precisão: 0,9456
+  - Recall: 0,8670
+  - F1: 0,9046
+  - ROC AUC: 0,9785
+
+Imagens exportadas da última execução:
+
+![Curva ROC](reports/churn_output_files/churn_output_8_0.png)
+
+![Matriz de confusão](reports/churn_output_files/churn_output_8_2.png)
+
+![Importâncias de atributos](reports/churn_output_files/churn_output_9_0.png)
+
+![SHAP beeswarm (se disponível)](reports/churn_output_files/churn_output_9_1.png)
+
+Relatório completo (Markdown): `reports/churn_output.md`
 
 ### Licença
 
