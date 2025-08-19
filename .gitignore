@@ -5,9 +5,5 @@ __pycache__/
 venv/
 .env
 .DS_Store
-data/raw/
-data/processed/
-models/
-reports/
 .devcontainer/.venv/
 
